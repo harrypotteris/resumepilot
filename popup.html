@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 280px; font: 13px system-ui, sans-serif; margin: 0; padding: 12px; }
+  h3 { margin: 0 0 8px; }
+  label { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+  button { width: 100%; padding: 8px; border: 0; border-radius: 6px; background: #1a73e8;
+           color: #fff; font-weight: 600; cursor: pointer; }
+  .line { margin-top: 8px; color: #5f6368; }
+  .ok { color: #188038; } .bad { color: #d93025; }
+</style>
+</head>
+<body>
+  <h3>ResumePilot</h3>
+  <label><input type="checkbox" id="enabled"> Auto-fill job application pages</label>
+  <button id="now">Fill this page now</button>
+  <div class="line" id="backend">Checking backend…</div>
+  <div class="line" id="last"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
